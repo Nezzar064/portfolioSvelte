@@ -8,8 +8,8 @@
         class="text-gray-300 transition duration-500 ease-in-out transform bg-white"
     >
         <div class="flex flex-col flex-wrap justify-center p-5 md:flex-row">
-            <span class="py-6">
-                <button class="bg-grey-500 hover:bg-grey-200 text-white font-bold py-2 px-4 rounded-full" on:click={() => scrollTop()}>Go to top</button>
+            <span class="py-6 inline-flex justify-center w-full mx-auto mt-2 mr-2 sm:ml-auto sm:mt-0">
+                <button class="mx-auto bg-grey-500 hover:bg-grey-200 text-white font-bold py-2 px-4 rounded-full" on:click={() => scrollTop()}>Go to top</button>
             </span>
             <span
                 class="inline-flex justify-center w-full mx-auto mt-2 mr-2 sm:ml-auto sm:mt-0"
