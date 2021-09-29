@@ -1,28 +1,16 @@
+<script>
+    import { scrollTop } from "svelte-scrolling";
+
+</script>
 <section>
 <div class="container items-center mx-auto px-6 ">
     <footer
-        class="text-gray-700 transition duration-500 ease-in-out transform bg-white"
+        class="text-gray-300 transition duration-500 ease-in-out transform bg-white"
     >
         <div class="flex flex-col flex-wrap justify-center p-5 md:flex-row">
-            <nav
-                class="flex flex-wrap items-center justify-center w-full mx-auto mb-6 text-base nprd"
-            >
-                <a
-                    href="#"
-                    class="px-4 py-1 mr-1 text-base text-gray-500 transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black "
-                    >Home</a
-                >
-                <a
-                    href="#"
-                    class="px-4 py-1 mr-1 text-base text-gray-500 transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black "
-                    >About Me</a
-                >
-                <a
-                    href="#"
-                    class="px-4 py-1 mr-1 text-base text-gray-500 transition duration-500 ease-in-out transform rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:text-black "
-                    >Projects & Experience</a
-                >
-            </nav>
+            <span class="py-6">
+                <button class="bg-grey-500 hover:bg-grey-200 text-white font-bold py-2 px-4 rounded-full" on:click={() => scrollTop()}>Go to top</button>
+            </span>
             <span
                 class="inline-flex justify-center w-full mx-auto mt-2 mr-2 sm:ml-auto sm:mt-0"
             >
@@ -68,7 +56,7 @@
                 </a>
             </span>
         </div>
-        <div class="w-full px-8 mt-4 rounded-b-lg bg-blueGray-50">
+        <div class="w-full px-8 mt-4 rounded-b-lg ">
             <div
                 class="container inline-flex flex-col flex-wrap items-center px-5 py-6 mx-auto sm:flex-row"
             >
