@@ -17,13 +17,13 @@
         </h2>
         <br>
         <p class="text-base text-gray-200 md:text-lg sm:px-4">
-            Computer Science student from Denmark. I would put myself as a backend-developer by nature, as that is where I find most pleasure programming, especially in Java Spring Boot.
+            Computer Science student from Denmark. I would put myself as a backend-developer by nature, as that is where I find the most pleasure programming, especially in Java Spring Boot.
             <br>
             <br>
-            However I have recently been getting into the front end world, starting out with JS and Svelte. 
+            However I have recently been getting into the front-end world, other than HTML and CSS which I already know, starting out with JavaScript and Svelte. 
             <br>
             <br>
-            Outside of programming I enjoy gaming quite a bit and lifting weights, which I have been doing for around 7-8 years now.
+            Outside of programming I enjoy gaming quite a bit, the outdoors and lifting heavy stuff in the gym, which I have been doing for around 7-8 years now.
         </p>
         <hr class="w-full my-8 border-gray-300" />
     </div>
