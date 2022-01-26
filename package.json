@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.3.6",
+    "daisyui": "^1.25.4",
     "sirv-cli": "^1.0.0",
     "svelte-scrolling": "^1.1.0"
   }
