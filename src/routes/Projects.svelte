@@ -81,7 +81,7 @@
             <br/>
             <p class="text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                 Here you can view some of my projects which I've highlighted (both hobby and
-                exams).
+                exam projects).
                 I have listed some older projects as well, to give an insight in how
                 I've evolved throughout my studies.
                 <br/>

@@ -19,6 +19,7 @@
     const database = [
         {id: 1, title: "MySQL", image: "/images/experience/mysql.svg"},
         {id: 2, title: "JPA & Hibernate", image: "/images/experience/hibernate.svg"},
+        {id: 2, title: "PostgreSQL", image: "/images/experience/postgresql.svg"},
     ];
 
     const tools = [

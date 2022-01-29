@@ -17,10 +17,10 @@
                             Computer Science student from Denmark on 4th semester. I see myself as a backend developer, as that is where my passion lies. However, I do not mind doing some frontend work if needed/necessary.
                             <br>
                             <br>
-                            I aspire to be confident in both front- and backend, as I feel that knowledge of both compliments each other. However, backend work is my main focus.
+                            I aspire to be confident in both front- and backend, as I feel that knowledge of both compliments each other and makes you a better developer.
                             <br>
                             <br>
-                            Outside of my studies, I am currently working at Motorola Solutions as Student Software Engineer.
+                            Outside of my studies, I am currently employed at Motorola Solutions as Student Software Engineer.
                         </p>
 
                     </div>
@@ -50,7 +50,7 @@
                     <div class="card-body">
                         <p class="text-base text-neutral md:text-lg sm:px-4">
                             I do quite a bit programming on the side as a hobby which is something I enjoy a lot. I basically started hobby-programming in 1st semester of my studies.
-                            This also includes playing around with virtual machines, Docker, Jenkins and what comes with it.
+                            This also includes playing around with virtual machines, Docker, Jenkins and anything that comes with it.
                             <br>
                             <br>
                             Outside of that, gaming has always been a big hobby for me. Both PC and console gaming.
