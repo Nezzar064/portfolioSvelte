@@ -3,7 +3,7 @@
 
 </script>
 <section>
-<div class="container items-center mx-auto px-6 ">
+<div class=" items-center bg-neutral mx-auto px-6 w-full bg-base-content rounded-box">
     <footer
         class="text-gray-300 transition duration-500 ease-in-out transform bg-white"
     >
@@ -71,21 +71,17 @@
                     </svg>
                 </a>
             </span>
-        </div>
-        <div class="w-full px-8 mt-4 rounded-b-lg ">
-            <div
-                class="container inline-flex flex-col flex-wrap items-center px-5 py-6 mx-auto sm:flex-row"
-            >
-                <p class="mx-auto text-sm text-center text-black sm:text-left ">
+            <p class="mx-auto text-sm text-center text-black sm:text-left ">
+                <br>
+                <br>
                     <span>
                         <a
-                        class="text-blue-500 hover:text-black"
-                        href="https://github.com/Nezzar064/portfolioSvelte"
-                    >Repository for this Portfolio</a>
+                                class="text-blue-500 hover:text-black"
+                                href="https://github.com/Nezzar064/portfolioSvelte"
+                        >Repository for this Portfolio</a>
                     </span>
-                    © 2021
-                </p>
-            </div>
+                © 2021
+            </p>
         </div>
     </footer>
 </div>
