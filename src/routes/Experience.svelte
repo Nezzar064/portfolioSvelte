@@ -52,7 +52,7 @@
             <div class="grid flex-grow h-full card rounded-box place-items-center">
                 <div class="card card-bordered">
                     <figure>
-                        <img src="/images/language.png">
+                        <img alt="#" src="/images/language.png">
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Programming Languages
@@ -61,7 +61,7 @@
                             {#each languages as language}
                                 <li>
                                     <p class="font-semibold">
-                                        <img src={language.image} class="h-10 w-10 inline-block"> {language.title}
+                                        <img src={language.image} class="h-10 w-10 inline-block" alt="#"> {language.title}
                                     </p>
                                     <br>
                                 </li>
@@ -73,7 +73,7 @@
                             {#each frameworks as framework}
                                 <li>
                                     <p class="font-semibold">
-                                        <img src={framework.image} class="h-10 w-10 inline-block"> {framework.title}
+                                        <img src={framework.image} alt="#" class="h-10 w-10 inline-block"> {framework.title}
                                     </p>
                                     <br>
                                 </li>
@@ -85,7 +85,7 @@
             <div class="grid flex-grow h-full card  rounded-box place-items-center">
                 <div class="card card-bordered">
                     <figure>
-                        <img src="/images/tools-resize.png" class="w-full ">
+                        <img alt="#" src="/images/tools-resize.png" class="w-full ">
                     </figure>
                     <br>
                     <div class="card-body">
@@ -94,7 +94,7 @@
                             {#each tools as tool}
                                 <li>
                                     <p class="font-semibold">
-                                        <img src={tool.image} class="h-10 w-10 inline-block"> {tool.title}
+                                        <img src={tool.image} alt="#" class="h-10 w-10 inline-block"> {tool.title}
                                     </p>
                                     <br>
                                 </li>
@@ -106,7 +106,7 @@
                             {#each database as database}
                                 <li>
                                     <p class="font-semibold">
-                                        <img src={database.image} class="h-10 w-10 inline-block"> {database.title}
+                                        <img src={database.image} alt="#" class="h-10 w-10 inline-block"> {database.title}
                                     </p>
                                     <br>
                                 </li>
