@@ -31,7 +31,7 @@
     ];
 </script>
 <section use:scrollRef={'experience'}
-         class="py-28 text-neutral"
+         class="pt-28 text-neutral"
 >
     <div
             class=" container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"

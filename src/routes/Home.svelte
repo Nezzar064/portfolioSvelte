@@ -2,7 +2,7 @@
     import { scrollRef } from 'svelte-scrolling'
 </script>
 
-<section use:scrollRef={'home'} class="">
+<section use:scrollRef={'home'} class="pt-12">
     <div class="flex items-center w-full py-44 bg-cover card ">
         <div class="container mx-auto pb-12 text-center">
             <div class="max-w-lg mx-auto">

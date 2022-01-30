@@ -64,10 +64,11 @@
 
 
 </script>
-
-<section use:scrollRef={'projects'}
-         class=" text-neutral"
+<section
+         class=" text-neutral pt-28"
+         use:scrollRef={'projects'}
 >
+
     <div class="container mx-auto rounded-box">
         <div
                 class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
