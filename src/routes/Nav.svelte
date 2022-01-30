@@ -1,46 +1,7 @@
 <script>
     import {scrollTo} from "svelte-scrolling";
 
-    // Burger menus
-    document.addEventListener('DOMContentLoaded', function () {
-        // open
-        const burger = document.querySelectorAll('.navbar-burger');
-        const menu = document.querySelectorAll('.navbar-menu');
 
-        if (burger.length && menu.length) {
-            for (let i = 0; i < burger.length; i++) {
-                burger[i].addEventListener('click', function () {
-                    for (let j = 0; j < menu.length; j++) {
-                        menu[j].classList.toggle('hidden');
-                    }
-                });
-            }
-        }
-
-        // close
-        const close = document.querySelectorAll('.navbar-close');
-        const backdrop = document.querySelectorAll('.navbar-backdrop');
-
-        if (close.length) {
-            for (let i = 0; i < close.length; i++) {
-                close[i].addEventListener('click', function () {
-                    for (let j = 0; j < menu.length; j++) {
-                        menu[j].classList.toggle('hidden');
-                    }
-                });
-            }
-        }
-
-        if (backdrop.length) {
-            for (let i = 0; i < backdrop.length; i++) {
-                backdrop[i].addEventListener('click', function () {
-                    for (let j = 0; j < menu.length; j++) {
-                        menu[j].classList.toggle('hidden');
-                    }
-                });
-            }
-        }
-    });
 </script>
 
 <style>
@@ -87,7 +48,7 @@
                     <div class="flex-1 group">
                         <a href="#" use:scrollTo={'experience'} class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-300 group-hover:text-indigo-500 border-b-2 border-transparent group-hover:border-indigo-500">
                         <span class="block px-1 pt-1 pb-2">
-                            <i class="far fa-search text-2xl pt-1 mb-1 block"></i>
+                            <i class="far fa-file text-2xl pt-1 mb-1 block"></i>
                             <span class="block text-xs pb-1">Experience</span>
                         </span>
                         </a>
@@ -95,7 +56,7 @@
                     <div class="flex-1 group">
                         <a href="#" use:scrollTo={'projects'} class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-300 group-hover:text-indigo-500 border-b-2 border-transparent group-hover:border-indigo-500">
                         <span class="block px-1 pt-1 pb-2">
-                            <i class="far fa-file text-2xl pt-1 mb-1 block"></i>
+                            <i class="far fa-folder text-2xl pt-1 mb-1 block"></i>
                             <span class="block text-xs pb-1">Projects</span>
                         </span>
                         </a>

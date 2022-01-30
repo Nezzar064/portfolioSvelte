@@ -516,10 +516,6 @@ video {
  * Ensure the default browser behavior of the `hidden` attribute.
  */
 
-[hidden] {
-  display: none;
-}
-
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgba(229, 229, 229, var(--tw-border-opacity));
@@ -891,36 +887,6 @@ html {
   box-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsla(var(--bc) / .2);
 }
 
-.toggle {
-  flex-shrink: 0;
-  --chkbg: hsla(var(--bc) / .2);
-  --focus-shadow: 0 0 0;
-  --handleoffset: 1.5rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  --tw-bg-opacity: 1;
-  --tw-bg-opacity: 0.2;
-  background-color: hsla(var(--bc) / var(--tw-bg-opacity, 1));
-  --tw-border-opacity: 1;
-  --tw-border-opacity: 0.2;
-  border-color: hsla(var(--bc) / var(--tw-border-opacity, 1));
-  border-width: 1px;
-  cursor: pointer;
-  height: 1.5rem;
-  width: 3rem;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .3s;
-  border-radius: var(--rounded-badge, 1.9rem);
-  transition: background,box-shadow var(--animation-input, .2s) ease-in-out;
-  box-shadow: calc(var(--handleoffset)*-1) 0 0 2px hsl(var(--b1)) inset, 0 0 0 2px hsl(var(--b1)) inset, var(--focus-shadow);
-}
-
-.toggle:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 @-webkit-keyframes button-pop {
   to {
     transform: scale(1);
@@ -1125,32 +1091,6 @@ html {
   background-color: hsla(var(--b1) / var(--tw-bg-opacity, 1));
 }
 
-.toggle:focus-visible {
-  --focus-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsl(var(--bc));
-}
-
-.toggle:checked,.toggle[checked=true] {
-  --chkbg: hsl(var(--bc));
-  --tw-bg-opacity: 1;
-  --tw-border-opacity: 1;
-  box-shadow: var(--handleoffset) 0 0 2px hsl(var(--b1)) inset, 0 0 0 2px hsl(var(--b1)) inset, var(--focus-shadow);
-}
-
-.toggle:indeterminate {
-  --chkbg: hsl(var(--bc));
-  --tw-bg-opacity: 1;
-  --tw-border-opacity: 1;
-  box-shadow: calc(var(--handleoffset)/2) 0 0 2px hsl(var(--b1)) inset, calc(var(--handleoffset)/-2) 0 0 2px hsl(var(--b1)) inset, 0 0 0 2px hsl(var(--b1)) inset, var(--focus-shadow);
-}
-
-.toggle:disabled {
-  --tw-bg-opacity: 1;
-  --tw-bg-opacity: 0.2;
-  background-color: hsla(var(--bc) / var(--tw-bg-opacity, 1));
-  border-color: transparent;
-  cursor: not-allowed;
-}
-
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
 }
@@ -1239,10 +1179,6 @@ html {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-9 {
