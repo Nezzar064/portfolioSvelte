@@ -100,7 +100,7 @@
                                         <span class="text-gray-400">{project.type},</span>
                                         <span class="text-gray-400">{project.date}</span>
                                     </p>
-                                    <h2 class="card-title">{project.headline}</h2>
+                                    <h2 class="card-title font-bold">{project.headline}</h2>
                                     <p>
                                         {project.description}
                                     </p>
@@ -144,7 +144,7 @@
                                     <span class="text-gray-400">{project.type},</span>
                                     <span class="text-gray-400">{project.date}</span>
                                 </p>
-                                <h2 class="card-title">{project.headline}</h2>
+                                <h2 class="card-title font-bold">{project.headline}</h2>
                                 <p>
                                     {project.description}
                                 </p>

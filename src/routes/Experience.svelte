@@ -56,7 +56,7 @@
                         <img alt="#" src="/images/language.png">
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Programming Languages
+                        <h2 class="card-title font-bold">Programming Languages
                         </h2>
                         <ul>
                             {#each languages as language}
@@ -68,7 +68,7 @@
                                 </li>
                             {/each}
                         </ul>
-                        <h2 class="card-title">Frameworks
+                        <h2 class="card-title font-bold">Frameworks
                         </h2>
                         <ul>
                             {#each frameworks as framework}
@@ -90,7 +90,7 @@
                     </figure>
                     <br>
                     <div class="card-body">
-                        <h2 class="card-title">Tools</h2>
+                        <h2 class="card-title font-bold">Tools</h2>
                         <ul>
                             {#each tools as tool}
                                 <li>
@@ -101,7 +101,7 @@
                                 </li>
                             {/each}
                         </ul>
-                        <h2 class="card-title">DBMS</h2>
+                        <h2 class="card-title font-bold">DBMS</h2>
 
                         <ul>
                             {#each database as database}
