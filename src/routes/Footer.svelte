@@ -3,13 +3,13 @@
 
 </script>
 <section>
-<div class=" items-center bg-neutral mx-auto px-6 w-full bg-base-content rounded-box">
+<div class=" items-center mx-auto px-6 w-full pt-5">
     <footer
-        class="text-gray-300 transition duration-500 ease-in-out transform bg-white"
+        class="text-gray-300 transition duration-500 ease-in-out transform"
     >
         <div class="flex flex-col flex-wrap justify-center p-5 md:flex-row">
             <span class="py-6 inline-flex justify-center w-full mx-auto mt-2 mr-2 sm:ml-auto sm:mt-0">
-                <button class="mx-auto bg-grey-500 hover:bg-grey-200 text-white font-bold py-2 px-4 rounded-full" on:click={() => scrollTop()}>Go to top</button>
+                <button class="mx-auto bg-base-content hover:bg-neutral text-white font-bold py-2 px-4 rounded-full" on:click={() => scrollTop()}>Go to top</button>
             </span>
             <span
                 class="inline-flex justify-center w-full mx-auto mt-2 mr-2 sm:ml-auto sm:mt-0"
@@ -19,11 +19,10 @@
                     href="http://www.github.com/nezzar064"
                 >
                     <svg
-                        fill="currentColor"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        class="w-5 h-5"
+                        class="w-10 h-10"
                         viewBox="0 0 24 24"
                     >
                         <path
@@ -32,55 +31,21 @@
                     </svg>
                 </a>
                 <a class="ml-3 text-blue-500 hover:text-black" href="https://www.instagram.com/mathias_sn/">
-                    <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-5 h-5"
-                        viewBox="0 0 24 24"
-                    >
-                        <rect
-                            width="20"
-                            height="20"
-                            x="2"
-                            y="2"
-                            rx="5"
-                            ry="5"
-                        />
-                        <path
-                            d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
-                        />
-                    </svg>
+                    <img src='./images/instagram.svg' alt="#" class="h-10 w-10">
                 </a>
                 <a class="ml-3 text-blue-500 hover:text-black" href="https://www.linkedin.com/in/mathias-sondergaard-nielsen-4766a0107">
-                    <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-5 h-5"
-                        viewBox="0 0 24 24"
-                    >
-                        
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                        />
-                    </svg>
+                    <img src='./images/linkedin.svg' alt="#" class="h-9 w-9 ">
                 </a>
             </span>
             <p class="mx-auto text-sm text-center text-black sm:text-left ">
                 <br>
-                <br>
-                    <span>
+                    <span class="text-neutral font-semibold">
                         <a
-                                class="text-blue-500 hover:text-black"
+                                class="hover:text-gray-600"
                                 href="https://github.com/Nezzar064/portfolioSvelte"
                         >Repository for this Portfolio</a>
+                        © 2021
                     </span>
-                © 2021
             </p>
         </div>
     </footer>

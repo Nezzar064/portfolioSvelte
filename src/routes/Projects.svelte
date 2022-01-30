@@ -66,117 +66,109 @@
 </script>
 
 <section use:scrollRef={'projects'}
-         class="py-28 text-neutral"
+         class=" text-neutral"
 >
     <div class="container mx-auto rounded-box">
-    <div
-            class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
-    >
-        <div class="text-center mb-20">
-            <h1
-                    class=" title-font text-neutral mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-5xl"
-            >
-                Projects
-            </h1>
-            <br/>
-            <p class="text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                Here you can view some of my projects which I've highlighted (both hobby and
-                exam projects).
-                I have listed some older projects as well, to give an insight in how
-                I've evolved throughout my studies.
+        <div
+                class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+        >
+            <div class="text-center mb-20">
+                <h1
+                        class=" title-font text-neutral mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-5xl"
+                >
+                    Projects
+                </h1>
                 <br/>
-            </p>
-        </div>
-        <div class="bg-base-200 rounded-box">
-        <div class="container mx-auto p-8 bg-base-200 rounded-box">
-            <div class="flex flex-row flex-wrap -mx-2">
-                {#each firstRowProjects as project}
-                    <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
-                        <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-md place-items-center">
+                <p class="text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+                    Here you can view some of my projects which I've highlighted (both hobby and
+                    exam projects).
+                    I have listed some older projects as well, to give an insight in how
+                    I've evolved throughout my studies.
+                    <br/>
+                </p>
+            </div>
+                <div class="container mx-auto p-8 rounded-box">
+                    <div class="flex flex-row flex-wrap -mx-2">
+                        {#each firstRowProjects as project}
+                            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
+                                <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-md place-items-center">
 
 
-                                <div class="card-body">
-                                    <p class="mb-3 text-xs font-semibold uppercase">
-                                        <span class="text-gray-400">{project.type},</span>
-                                        <span class="text-gray-400">{project.date}</span>
-                                    </p>
-                                    <h2 class="card-title font-bold">{project.headline}</h2>
-                                    <p>
-                                        {project.description}
-                                    </p>
+                                    <div class="card-body">
+                                        <p class="mb-3 text-xs font-semibold uppercase">
+                                            <span class="text-gray-400">{project.type},</span>
+                                            <span class="text-gray-400">{project.date}</span>
+                                        </p>
+                                        <h2 class="card-title font-bold">{project.headline}</h2>
+                                        <p>
+                                            {project.description}
+                                        </p>
+
+                                    </div>
+
+                                    <div class="bottom-0 pt-1 place-items-center">
+                                        <a
+                                                href={project.repository}
+                                                aria-label="Repository"
+                                                title="Github Link"
+                                                class="font-semibold text-neutral">
+                                            <img
+                                                    src="./images/github.svg"
+                                                    alt="avatar"
+                                                    class="inline-block w-10 h-10 rounded-full"
+                                            />&nbsp;Repository</a
+                                        >
+                                    </div>
+                                    <br>
 
                                 </div>
 
-                            <div class="bottom-0 pt-1 place-items-center">
-                                <a
-                                        href="https://github.com/Nezzar064/StudentAdminWDB"
-                                        aria-label="Repository"
-                                        title="Github Link"
-                                        class="font-semibold text-neutral">
-                                    <img
-                                            src="./images/github.svg"
-                                            alt="avatar"
-                                            class="inline-block w-10 h-10 rounded-full"
-                                    />&nbsp;Repository</a
-                                >
                             </div>
-                            <br>
 
-                        </div>
 
+                        {/each}
+
+                        {#each secondRowProjects as project}
+                            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
+                                <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-lg place-items-center">
+
+
+                                    <div class="card-body">
+                                        <p class="mb-3 text-xs font-semibold uppercase">
+                                            <span class="text-gray-400">{project.type},</span>
+                                            <span class="text-gray-400">{project.date}</span>
+                                        </p>
+                                        <h2 class="card-title font-bold">{project.headline}</h2>
+                                        <p>
+                                            {project.description}
+                                        </p>
+
+                                    </div>
+
+                                    <div class="bottom-0 pt-1 place-items-center">
+                                        <a
+                                                href={project.repository}
+                                                aria-label="Repository"
+                                                title="Github Link"
+                                                class="font-semibold text-bas">
+                                            <img
+                                                    src="./images/github.svg"
+                                                    alt="avatar"
+                                                    class="inline-block w-10 h-10 rounded-full"
+                                            />&nbsp;Repository</a
+                                        >
+                                    </div>
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+
+                        {/each}
                     </div>
-
-
-
-                {/each}
-            </div>
+                </div>
         </div>
-
-        <div class="container mx-auto p-8">
-            <div class="flex flex-row flex-wrap -mx-2">
-                {#each secondRowProjects as project}
-                    <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
-                        <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-md place-items-center">
-
-
-                            <div class="card-body">
-                                <p class="mb-3 text-xs font-semibold uppercase">
-                                    <span class="text-gray-400">{project.type},</span>
-                                    <span class="text-gray-400">{project.date}</span>
-                                </p>
-                                <h2 class="card-title font-bold">{project.headline}</h2>
-                                <p>
-                                    {project.description}
-                                </p>
-
-                            </div>
-
-                            <div class="bottom-0 pt-1 place-items-center">
-                                <a
-                                        href="https://github.com/Nezzar064/StudentAdminWDB"
-                                        aria-label="Repository"
-                                        title="Github Link"
-                                        class="font-semibold text-neutral">
-                                    <img
-                                            src="./images/github.svg"
-                                            alt="avatar"
-                                            class="inline-block w-10 h-10 rounded-full"
-                                    />&nbsp;Repository</a
-                                >
-                            </div>
-                            <br>
-
-                        </div>
-
-                    </div>
-
-
-
-                {/each}
-            </div>
-        </div>
-        </div>
-    </div>
     </div>
 </section>
 

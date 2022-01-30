@@ -2,11 +2,11 @@
     import {scrollRef} from 'svelte-scrolling'
 </script>
 
-<section use:scrollRef={'about'} class="py-28">
-    <div class="container mx-auto p-8 bg-base-200 rounded-box">
+<section use:scrollRef={'about'} class="pt-28">
+    <div class="container mx-auto p-8 rounded-box">
         <div class="flex flex-row flex-wrap -mx-2">
             <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
-                <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-2xl place-items-center">
+                <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-xl place-items-center">
                     <h2
                             class="mb-4 pt-12 text-center title-font text-4xl font-extrabold leading-10 tracking-tight text-neutral sm:text-5xl sm:leading-none md:text-5xl"
                     >
@@ -14,7 +14,7 @@
                     </h2>
                     <div class="card-body">
                         <p class="text-base text-neutral md:text-lg sm:px-4">
-                            Computer Science student from Denmark on 4th semester. I see myself as a backend developer, as that is where my passion lies. However, I do not mind doing some frontend work if needed/necessary.
+                            Computer Science student from Denmark on 4th semester. I love working on web backends and have worked to improve my skills in this area. I'm looking to expand into a full stack role in the future with a broader skill set.
                             <br>
                             <br>
                             I aspire to be confident in both front- and backend, as I feel that knowledge of both compliments each other and makes you a better developer.
@@ -30,7 +30,7 @@
             </div>
 
             <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
-                <div class="relative h-full flex-grow grid card rounded-box card-bordered border-gray-300 shadow-2xl place-items-center">
+                <div class="relative h-full flex-grow grid card rounded-box card-bordered border-gray-300 shadow-xl place-items-center">
                     <div class="card-body">
                         <img alt="profil" src="/images/suitMe.jpg" class=" rounded"/>
 
@@ -41,7 +41,7 @@
             </div>
 
             <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
-                <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-2xl place-items-center">
+                <div class="relative h-full card rounded-box card-bordered border-gray-300 shadow-xl place-items-center">
                     <h2
                             class="mb-4 pt-12 text-center title-font text-4xl font-extrabold leading-10 tracking-tight text-neutral sm:text-5xl sm:leading-none md:text-5xl"
                     >

@@ -16,7 +16,7 @@
         {id: 5, title: "JUnit & Mockito", image: "/images/experience/junit.svg"},
     ];
 
-    const database = [
+    const databases = [
         {id: 1, title: "MySQL", image: "/images/experience/mysql.svg"},
         {id: 2, title: "JPA & Hibernate", image: "/images/experience/hibernate.svg"},
         {id: 2, title: "PostgreSQL", image: "/images/experience/postgresql.svg"},
@@ -24,8 +24,8 @@
 
     const tools = [
         {id: 1, title: "Linux", image: "/images/experience/linux.svg"},
-        {id: 2, title: "Azure to some extend", image: "/images/experience/azure.svg"},
-        {id: 3, title: "AWS to some extend", image: "/images/experience/aws.svg"},
+        {id: 2, title: "Azure to some extent", image: "/images/experience/azure.svg"},
+        {id: 3, title: "AWS to some extent", image: "/images/experience/aws.svg"},
         {id: 4, title: "Docker", image: "/images/experience/docker.svg"},
         {id: 5, title: "Jenkins", image: "/images/experience/jenkins.svg"}
     ];
@@ -34,7 +34,7 @@
          class="py-28 text-neutral"
 >
     <div
-            class=" mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
+            class=" container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
     >
         <div class="text-center mb-20">
             <h1
@@ -44,17 +44,14 @@
             </h1>
             <br/>
             <p class="text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                Here I have listed my experience, divided in programming languages, frameworks and tools (including DBMS).
+                Here I have listed my experience, divided in programming languages, frameworks, tools and DBMS.
                 <br/>
             </p>
         </div>
 
-        <div class="flex flex-row w-full">
-            <div class="grid flex-grow h-full card rounded-box place-items-center">
-                <div class="card card-bordered">
-                    <figure>
-                        <img alt="#" src="/images/language.png">
-                    </figure>
+        <div class="flex  justify-center w-full">
+            <div class="flex-grow-0 h-full rounded-box place-items-center">
+                <div class="card">
                     <div class="card-body">
                         <h2 class="card-title font-bold">Programming Languages
                         </h2>
@@ -83,31 +80,28 @@
                     </div>
                 </div>
             </div>
-            <div class="grid flex-grow h-full card  rounded-box place-items-center">
-                <div class="card card-bordered">
-                    <figure>
-                        <img alt="#" src="/images/tools-resize.png" class="w-full ">
-                    </figure>
-                    <br>
+            <div class="flex-grow-0 h-full rounded-box place-items-center">
+                <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title font-bold">Tools</h2>
+                        <h2 class="card-title font-bold">Tools
+                        </h2>
                         <ul>
                             {#each tools as tool}
                                 <li>
                                     <p class="font-semibold">
-                                        <img src={tool.image} alt="#" class="h-10 w-10 inline-block"> {tool.title}
+                                        <img src={tool.image} class="h-10 w-10 inline-block" alt="#"> {tool.title}
                                     </p>
                                     <br>
                                 </li>
                             {/each}
                         </ul>
-                        <h2 class="card-title font-bold">DBMS</h2>
-
+                        <h2 class="card-title font-bold">DBMS
+                        </h2>
                         <ul>
-                            {#each database as database}
+                            {#each databases as db}
                                 <li>
                                     <p class="font-semibold">
-                                        <img src={database.image} alt="#" class="h-10 w-10 inline-block"> {database.title}
+                                        <img src={db.image} alt="#" class="h-10 w-10 inline-block"> {db.title}
                                     </p>
                                     <br>
                                 </li>

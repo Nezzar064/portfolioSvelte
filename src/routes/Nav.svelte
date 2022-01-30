@@ -42,17 +42,19 @@
         }
     });
 </script>
-<header class="sticky top-0 z-50">
-    <nav class="relative h-16 px-4 py-8 flex justify-between items-center bg-base-content rounded-box">
-        <div class="lg:hidden">
-            <button class="navbar-burger rounded-box flex items-center text-blue-600 p-3">
-                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-                <h1 class="inline-block"> &nbsp;Menu</h1>
-            </button>
-        </div>
-        <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+
+<header class="sticky top-0 z-50 lg:mx-72">
+    <div class="lg:hidden md:hidden xl:hidden">
+        <button class="navbar-burger bg-base-content rounded-box items-center text-blue-600 p-3">
+            <svg class="block h-4 w-4 fill-current inline-block" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+            <h1 class="inline-block"> &nbsp;Menu</h1>
+        </button>
+    </div>
+    <nav class="h-16 hidden md:visible lg:visible xl:visible lg:mx-96 md:mx-32 md: py-8 md:flex xl:flex lg:flex items-center bg-base-content rounded-box">
+        <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6
+md:flex md:mx-auto md:flex md:items-center md:w-auto md:space-x-6">
             <li><a class="text-sm text-gray-200 hover:text-gray-500" use:scrollTo={"home"} href="#">Home</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -61,7 +63,7 @@
                           d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
                 </svg>
             </li>
-            <li><a class="text-sm text-gray-200 hover:text-gray-500" use:scrollTo={"about"} href="#">About Me</a></li>
+            <li><a class="text-sm text-gray-200 hover:text-gray-500" use:scrollTo={"about"} href="#">About</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                      viewBox="0 0 24 24">

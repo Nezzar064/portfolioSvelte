@@ -401,7 +401,8 @@ textarea::placeholder {
   color: #a3a3a3;
 }
 
-button {
+button,
+[role="button"] {
   cursor: pointer;
 }
 
@@ -823,6 +824,33 @@ html {
   outline: 2px solid transparent;
   outline-offset: 2px;
   box-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsla(var(--bc) / .2);
+}
+
+.stack {
+  display: inline-grid;
+  place-items: center;
+  align-items: flex-end;
+}
+
+.stack>* {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transform: translateY(1rem)scale(.9);
+  z-index: 1;
+  width: 100%;
+  opacity: .6;
+}
+
+.stack>:nth-child(2) {
+  transform: translateY(.5rem)scale(.95);
+  z-index: 2;
+  opacity: .8;
+}
+
+.stack>:first-child {
+  transform: translateY(0)scale(1);
+  z-index: 3;
+  opacity: 1;
 }
 
 .table {
@@ -1252,12 +1280,12 @@ html {
   height: 1rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-6 {
   height: 1.5rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .h-10 {
@@ -1276,12 +1304,12 @@ html {
   width: 1rem;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
 .w-6 {
   width: 1.5rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .w-10 {
@@ -1302,6 +1330,10 @@ html {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
 }
 
 .flex-grow {
@@ -1386,10 +1418,6 @@ html {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1411,19 +1439,14 @@ html {
   border-color: rgba(212, 212, 212, var(--tw-border-opacity));
 }
 
-.bg-neutral {
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--n) / var(--tw-bg-opacity));
-}
-
-.bg-base-200 {
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--b2) / var(--tw-bg-opacity));
-}
-
 .bg-base-content {
   --tw-bg-opacity: 1;
   background-color: hsla(var(--bc) / var(--tw-bg-opacity));
+}
+
+.hover\:bg-neutral:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--n) / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1494,8 +1517,16 @@ html {
   padding-top: 0.25rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
 }
 
 .pb-12 {
@@ -1593,6 +1624,11 @@ html {
   color: rgba(115, 115, 115, var(--tw-text-opacity));
 }
 
+.hover\:text-gray-600:hover {
+  --tw-text-opacity: 1;
+  color: rgba(82, 82, 82, var(--tw-text-opacity));
+}
+
 .opacity-75 {
   opacity: 0.75;
 }
@@ -1606,8 +1642,13 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1676,6 +1717,32 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:mx-32 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1686,6 +1753,16 @@ html {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:px-24 {
@@ -1710,6 +1787,20 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
+  }
+
+  .lg\:mx-72 {
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+
+  .lg\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1761,6 +1852,18 @@ html {
 }
 
 @media (min-width: 1280px) {
+  .xl\:visible {
+    visibility: visible;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
   .xl\:w-2\/4 {
     width: 50%;
   }
