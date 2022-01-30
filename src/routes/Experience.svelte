@@ -34,7 +34,7 @@
          class="pt-28 text-neutral"
 >
     <div
-            class=" container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
+            class=" container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 "
     >
         <div class="text-center mb-20">
             <h1

@@ -43,83 +43,66 @@
     });
 </script>
 
+<style>
+    @import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .hover\:w-full:hover {
+        width: 100%;
+    }
+    .group:hover .group-hover\:w-full {
+        width: 100%;
+    }
+    .group:hover .group-hover\:inline-block {
+        display: inline-block;
+    }
+    .group:hover .group-hover\:flex-grow {
+        flex-grow: 1;
+    }
+</style>
+
 <header class="sticky top-0 z-50 lg:mx-72">
-    <div class="lg:hidden md:hidden xl:hidden">
-        <button class="navbar-burger bg-base-content rounded-box items-center text-blue-600 p-3">
-            <svg class="block h-4 w-4 fill-current inline-block" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-            <h1 class="inline-block"> &nbsp;Menu</h1>
-        </button>
-    </div>
-    <nav class="h-16 hidden md:visible lg:visible xl:visible lg:mx-96 md:mx-32 md: py-8 md:flex xl:flex lg:flex items-center bg-base-content rounded-box">
-        <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6
-md:flex md:mx-auto md:flex md:items-center md:w-auto md:space-x-6">
-            <li><a class="text-sm text-gray-200 hover:text-gray-500" use:scrollTo={"home"} href="#">Home</a></li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
-                </svg>
-            </li>
-            <li><a class="text-sm text-gray-200 hover:text-gray-500" use:scrollTo={"about"} href="#">About</a></li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
-                </svg>
-            </li>
-            <li><a class="text-sm text-gray-200 hover:text-gray-500" use:scrollTo={"experience"} href="#">Experience</a></li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
-                </svg>
-            </li>
-            <li><a class="text-sm text-gray-200 hover:text-gray-500" use:scrollTo={"projects"} href="#">Projects</a></li>
+        <div class="w-full max-w-md mx-auto flex items-center justify-center px-5 pt-2 ">
 
-        </ul>
-
-    </nav>
-    <div class="navbar-menu relative z-50 hidden">
-        <div class="navbar-backdrop fixed inset-0 bg-base-content opacity-75"></div>
-        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-            <div class="flex items-center mb-8">
-                <a class="mr-auto text-3xl font-bold leading-none" href="#">
-                </a>
-                <button class="navbar-close">
-                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
+            <div class="px-7 bg-base-content shadow-lg rounded-2xl mb-5">
+                <div class="flex">
+                    <div class="flex-1 group">
+                        <a href="#" use:scrollTo={'home'} class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-300 group-hover:text-indigo-500 border-b-2 border-transparent group-hover:border-indigo-500">
+                        <span class="block px-1 pt-1 pb-2">
+                            <i class="far fa-home text-2xl pt-1 mb-1 block"></i>
+                            <span class="block text-xs pb-1">Home</span>
+                        </span>
+                        </a>
+                    </div>
+                    <div class="flex-1 group">
+                        <a href="#" use:scrollTo={'about'} class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-300 group-hover:text-indigo-500 border-b-2 border-transparent group-hover:border-indigo-500">
+                        <span class="block px-1 pt-1 pb-2">
+                            <i class="far fa-user text-2xl pt-1 mb-1 block"></i>
+                            <span class="block text-xs pb-1">About</span>
+                        </span>
+                        </a>
+                    </div>
+                    <div class="flex-1 group">
+                        <a href="#" use:scrollTo={'experience'} class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-300 group-hover:text-indigo-500 border-b-2 border-transparent group-hover:border-indigo-500">
+                        <span class="block px-1 pt-1 pb-2">
+                            <i class="far fa-search text-2xl pt-1 mb-1 block"></i>
+                            <span class="block text-xs pb-1">Experience</span>
+                        </span>
+                        </a>
+                    </div>
+                    <div class="flex-1 group">
+                        <a href="#" use:scrollTo={'projects'} class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-300 group-hover:text-indigo-500 border-b-2 border-transparent group-hover:border-indigo-500">
+                        <span class="block px-1 pt-1 pb-2">
+                            <i class="far fa-file text-2xl pt-1 mb-1 block"></i>
+                            <span class="block text-xs pb-1">Projects</span>
+                        </span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
-                           href="#" use:scrollTo={"home"}>Home</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
-                           href="#" use:scrollTo={"about"} >About Me</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
-                           href="#" use:scrollTo={"experience"}>Experience</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
-                           href="#" use:scrollTo={"projects"}>Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        </div>
     </header>
 
 

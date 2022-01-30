@@ -2,7 +2,7 @@
     import {scrollRef} from 'svelte-scrolling'
 </script>
 
-<section use:scrollRef={'about'} class="pt-28">
+<section use:scrollRef={'about'} class="pt-24">
     <div class="container mx-auto p-8 rounded-box">
         <div class="flex flex-row flex-wrap -mx-2">
             <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-4 px-2">
